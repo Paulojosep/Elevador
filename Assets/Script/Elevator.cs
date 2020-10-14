@@ -15,14 +15,7 @@ public class Elevator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.U)){
-
-            elevatorPanel.SetActive(true);
         
-        }
-
-       // if(Input.GetKeyDown(KeyCode.Y)){
-        //}
     }
 
     private void OnTriggerEnter(Collider other) {
