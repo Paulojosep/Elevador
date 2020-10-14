@@ -16,10 +16,13 @@ public class Elevator : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.U)){
+
+            elevatorPanel.SetActive(true);
+        
         }
 
-        if(Input.GetKeyDown(KeyCode.D)){
-        }
+       // if(Input.GetKeyDown(KeyCode.Y)){
+        //}
     }
 
     private void OnTriggerEnter(Collider other) {
@@ -33,4 +36,5 @@ public class Elevator : MonoBehaviour
             elevatorPanel.SetActive(false);
         }
     }
+
 }

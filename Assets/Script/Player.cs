@@ -15,11 +15,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.U)){
-            if(Subir ==false){
+        if(Input.GetKeyUp(KeyCode.U)){
+            Debug.Log("Você precionado U");
+            if(Subir == false){
                 elevador = GameObject.Find("Elevador");
                 elevador.GetComponent<Animation>().GetClip("Subir");
-                Subir = true;
+                   Subir = true;
             }
         }
     }
